@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2c3e50;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: #2980b9;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .section {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Student Management System</h1>
+</header>
+
+<nav>
+  <a href="#enrollment">Enrollment</a>
+  <a href="#attendance">Attendance</a>
+  <a href="#grades">Grades</a>
+  <a href="#communication">Communication</a>
+</nav>
+
+<div class="container">
+
+  <!-- Enrollment Section -->
+  <div class="section" id="enrollment">
+    <h2>Student Enrollment</h2>
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter full name" />
+
+      <label>Age</label>
+      <input type="number" placeholder="Enter age" />
+
+      <label>Class</label>
+      <select>
+        <option>Class 1</option>
+        <option>Class 2</option>
+        <option>Class 3</option>
+      </select>
+
+      <label>Address</label>
+      <textarea placeholder="Enter address"></textarea>
+
+      <button type="submit">Enroll Student</button>
+    </form>
+  </div>
+
+  <!-- Attendance Section -->
+  <div class="section" id="attendance">
+    <h2>Attendance Tracking</h2>
+    <form>
+      <label>Student Name</label>
+      <input type="text" placeholder="Enter student name" />
+
+      <label>Date</label>
+      <input type="date" />
+
+      <label>Status</label>
+      <select>
+        <option>Present</option>
+        <option>Absent</option>
+      </select>
+
+      <button type="submit">Record Attendance</button>
+    </form>
+  </div>
+
+  <!-- Grade Management Section -->
+  <div class="section" id="grades">
+    <h2>Grade Management</h2>
+    <form>
+      <label>Student Name</label>
+      <input type="text" placeholder="Enter student name" />
+
+      <label>Subject</label>
+      <input type="text" placeholder="Enter subject" />
+
+      <label>Grade</label>
+      <input type="text" placeholder="Enter grade (e.g., A, B+)" />
+
+      <button type="submit">Save Grade</button>
+    </form>
+  </div>
+
+  <!-- Communication Section -->
+  <div class="section" id="communication">
+    <h2>Communication</h2>
+    <form>
+      <label>From</label>
+      <input type="text" placeholder="Teacher/Parent/Student" />
+
+      <label>To</label>
+      <input type="text" placeholder="Student/Teacher/Parent" />
+
+      <label>Message</label>
+      <textarea placeholder="Write message here..."></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>
+
